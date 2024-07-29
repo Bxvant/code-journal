@@ -1,0 +1,27 @@
+/* below is the CSS for the header */
+
+header {
+  background-color: #4c2676;
+  color: white;
+}
+
+.padding-20 {
+  padding: 10px;
+}
+
+/* below is the CSS for the body */
+
+.marginTopBottom10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.title-photo {
+  width: 100%;
+  padding: 5px;
+}
+
+.notes {
+  width: 100%;
+  height: 150px;
+}

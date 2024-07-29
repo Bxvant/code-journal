@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,11 +17,49 @@
   </head>
   <body>
     <header>
-      <div class="container"></div>
+      <div class="container">
+        <div class="column-full padding-20">
+          <h1>Code Journal</h1>
+        </div>
+      </div>
     </header>
     <main class="container">
       <div data-view="entry-form"></div>
       <div data-view="entries" class="hidden"></div>
+      <div class="column-full row">
+        <h1>New Entry</h1>
+      </div>
+      <div class="row">
+        <img
+          id="url-photo"
+          class="column-half"
+          src="/images/placeholder-image-square.jpg" />
+        <form class="column-half">
+          <label for="title">Title</label><br />
+          <input
+            class="marginTopBottom10 title-photo"
+            id="title"
+            type="text"
+            name="title"
+            required /><br />
+          <label for="photoURL">Photo URL</label><br />
+          <input
+            class="marginTopBottom10 title-photo"
+            id="photoURL"
+            type="text"
+            name="photoURL"
+            required />
+        </form>
+      </div>
+      <div>
+        <form class="column-full notes">
+          <div class="marginTopBottom10">
+            <label for="notes">Notes</label><br />
+            <input class="notes" id="notes" type="text" name="notes" required />
+          </div>
+          <button id="submit" type="submit">SUBMIT</button>
+        </form>
+      </div>
     </main>
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
