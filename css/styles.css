@@ -42,9 +42,8 @@ button {
   padding: 4px;
 }
 
-#url-photo {
-  width: 300px;
-  height: 300px;
+.photo {
+  width: 100%;
 }
 
 input:focus,
