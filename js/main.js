@@ -20,9 +20,10 @@ if (!$title) throw new Error('$title query has failed');
 if (!$notes) throw new Error('$notes query has failed');
 entryForm.addEventListener('submit', (event) => {
   event.preventDefault();
-  const title = $title.value;
-  const photoURL = $inputURL.value;
-  const notes = $notes.value;
+  const $formElements = entryForm.elements;
+  const title = $formElements.title.value;
+  const photoURL = $formElements.photoURL.value;
+  const notes = $formElements.notes.value;
   const entry = {
     title,
     photoURL,

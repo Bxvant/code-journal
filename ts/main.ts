@@ -1,6 +1,12 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 /* global data */
 
+interface FormElements extends HTMLFormControlsCollection {
+  photoURL: HTMLInputElement;
+  title: HTMLInputElement;
+  notes: HTMLTextAreaElement;
+}
+
 const $inputURL = document.getElementById('photoURL') as HTMLInputElement;
 const photoPreview = document.getElementById('url-photo') as HTMLImageElement;
 
@@ -27,9 +33,10 @@ if (!$notes) throw new Error('$notes query has failed');
 
 entryForm.addEventListener('submit', (event: Event) => {
   event.preventDefault();
-  const title = $title.value;
-  const photoURL = $inputURL.value;
-  const notes = $notes.value;
+  const $formElements = entryForm.elements as FormElements;
+  const title = $formElements.title.value;
+  const photoURL = $formElements.photoURL.value;
+  const notes = $formElements.notes.value;
   const entry: Entry = {
     title,
     photoURL,

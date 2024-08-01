@@ -5,13 +5,13 @@ header {
   color: white;
 }
 
-.padding-20 {
+.padding-10 {
   padding: 10px;
 }
 
 /* below is the CSS for the body */
 
-.marginTopBottom10 {
+.my10 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -40,4 +40,14 @@ button {
   border-radius: 5px;
   color: white;
   padding: 4px;
+}
+
+#url-photo {
+  width: 300px;
+  height: 300px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #390c69;
 }

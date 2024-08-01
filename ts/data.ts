@@ -13,6 +13,7 @@ interface Data {
   editing: null;
   nextEntryId: number;
 }
+
 let data: Data = {
   view: 'entry-form',
   entries: [],
